@@ -35,8 +35,8 @@ LOCAL_CFLAGS += \
      -fno-short-enums \
      -D_ANDROID_
 
-ifeq ($(TARGET_BUILD_VARIANT),user)
-   LOCAL_CFLAGS += -DTARGET_BUILD_VARIANT_USER
+ifneq ($(TARGET_BUILD_VARIANT),user)
+   LOCAL_CFLAGS += -DTARGET_DEBUGGABLE
 endif
 
 LOCAL_LDFLAGS += -Wl,--export-dynamic
