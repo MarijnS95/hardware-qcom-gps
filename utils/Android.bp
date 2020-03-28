@@ -52,7 +52,11 @@ cc_library_shared {
         "-Wl,--export-dynamic",
     ],
 
+    export_header_lib_headers: [
+        "libgps.utils_headers",
+    ],
     header_libs: [
+        "libgps.utils_headers",
         "libutils_headers",
         "libloc_pla_headers",
         "liblocation_api_headers",

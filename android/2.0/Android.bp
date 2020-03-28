@@ -41,6 +41,8 @@ cc_library_shared {
         "libloc_pla_headers",
         "liblocation_api_headers",
         "liblocbatterylistener_headers",
+        "measurement_corrections_1_0_headers",
+        "visibility_control_1_0_headers",
     ],
 
     shared_libs: [
@@ -89,12 +91,12 @@ cc_binary {
     ],
 
     header_libs: [
-        "libgps.utils_headers",
-        "libloc_core_headers",
-        "libloc_pla_headers",
-        "liblocation_api_headers",
-        "measurement_corrections_1_0_headers",
-        "visibility_control_1_0_headers",
+        // "libgps.utils_headers",
+        // "libloc_core_headers",
+        // "libloc_pla_headers",
+        // "liblocation_api_headers",
+        // "measurement_corrections_1_0_headers",
+        // "visibility_control_1_0_headers",
     ],
 
     shared_libs: [
